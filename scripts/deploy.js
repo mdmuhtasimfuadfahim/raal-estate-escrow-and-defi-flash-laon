@@ -1,41 +1,34 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-process-exit */
-const hre = require("hardhat");
-const { ethers } = require("hardhat");
-const tokens = (n) => {
-  return ethers.utils.parseUnits(n.toString(), "ether");
-};
-
-const ether = tokens;
-
 async function main() {
-  const RealEstate = await hre.ethers.getContractFactory("RealEstate");
-  const Escrow = await hre.ethers.getContractFactory("Escrow");
+  const [deployer] = await ethers.getSigners();
 
-  const realEstate = await RealEstate.deploy();
-  await realEstate.deployed();
-  console.log("Real Estate deployed to:", realEstate.address);
+  console.log("Deploying contracts with the account:", deployer.address);
 
-  const escrow = await Escrow.deploy(
-    realEstate.address,
-    1,
-    ether(10),
-    ether(2),
-    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d",
-    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d",
-    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d",
-    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d"
+  console.log("Account balance:", (await deployer.getBalance()).toString());
+
+  const FlashLoan = await hre.ethers.getContractFactory("FlashLoan");
+  const FlashLoanReceiver = await hre.ethers.getContractFactory(
+    "FlashLoanReceiver"
   );
+  const Token = await hre.ethers.getContractFactory("Token");
 
-  await escrow.deployed();
+  const token = await Token.deploy("My Tokens", "MTKs", "1000000");
+  await token.deployed();
+  console.log("Token deployed to:", token.address);
 
-  console.log("Escrow deployed to:", escrow.address);
+  const flashLoan = await FlashLoan.deploy(token.address);
+  await flashLoan.deployed();
+  console.log("Flash Loan deployed to:", flashLoan.address);
+
+  const flashLoanReceiver = await FlashLoanReceiver.deploy(flashLoan.address);
+  await flashLoanReceiver.deployed();
+  console.log("Flash Loan Receiver deployed to:", flashLoanReceiver.address);
 }
 
-(async () => {
-  try {
-    await main();
-    process.exit(0);
-  } catch (error) {
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
     process.exit(1);
-  }
-})();
+  });
