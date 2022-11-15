@@ -1,24 +1,25 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable node/no-unpublished-require */
 const { network } = require("hardhat");
+const { ethers } = require("hardhat");
+const tokens = (n) => {
+  return ethers.utils.parseUnits(n.toString(), "ether");
+};
+
+const ether = tokens;
 module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  const Token = await deploy("Token", {
+  const RealEstate = await deploy("RealEstate", {
     from: deployer,
     log: true,
   });
 
-  const FlashLoan = await deploy("FlashLoan", {
-    from: deployer,
-    log: true,
-  });
-
-  const FlashLoanReceiver = await deploy("FlashLoanReceiver", {
+  const Escrow = await deploy("Escrow", {
     from: deployer,
     log: true,
   });
 };
 
-module.exports.tags = ["MTK", "FL", "FLR"];
+module.exports.tags = ["RealEstate", "escrow"];

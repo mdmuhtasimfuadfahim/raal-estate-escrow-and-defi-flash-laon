@@ -25,6 +25,7 @@ library Counters {
         return counter._value;
     }
 
+    // increment the counter
     function increment(Counter storage counter) internal {
         unchecked {
             counter._value += 1;

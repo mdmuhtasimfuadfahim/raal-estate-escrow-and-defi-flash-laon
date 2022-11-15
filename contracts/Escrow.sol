@@ -50,14 +50,17 @@ contract Escrow {
             lender = _lender;
             }
 
+    // buyer will deposit the earnest
     function depositEarnest() public payable onlyBuyer {
         require(msg.value >= escrowAmount, "Escrow amount doesn't match");
     }
 
+    // inspector will do this inspection
     function updateInspectionStatus(bool _passed) public onlyInspector {
         inspectionPassed = _passed;
     }
 
+    // buyer, seller and lender will approve the sale
     function approveSale() public {
         approval[msg.sender] = true;
     }
