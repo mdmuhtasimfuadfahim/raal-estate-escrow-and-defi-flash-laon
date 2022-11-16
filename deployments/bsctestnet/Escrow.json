@@ -1,0 +1,399 @@
+{
+  "address": "0x059c9e6A5956D9B57dB7b9751b54473b55b21D30",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_nftID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_purchasePrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_escrowAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_seller",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_buyer",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_inspector",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_lender",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "approval",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "approveSale",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "buyer",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "cancelSale",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "depositEarnest",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "escrowAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "finalizeSale",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "inspectionPassed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "inspector",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lender",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nftAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nftID",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "purchasePrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "seller",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "_passed",
+          "type": "bool"
+        }
+      ],
+      "name": "updateInspectionStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0x47cf1fd6082a21c137d3b35883e3979759b519d8e02309cea0985804e7af034e",
+  "receipt": {
+    "to": null,
+    "from": "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d",
+    "contractAddress": "0x059c9e6A5956D9B57dB7b9751b54473b55b21D30",
+    "transactionIndex": 8,
+    "gasUsed": "855233",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x154e4a4c9900ece535adb8fb276b3f512d1d753751a3f7df5cd1a4336f7a7d57",
+    "transactionHash": "0x47cf1fd6082a21c137d3b35883e3979759b519d8e02309cea0985804e7af034e",
+    "logs": [],
+    "blockNumber": 24643398,
+    "cumulativeGasUsed": "1572461",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x90c44386BC1F00823879D9905a85b8D704f9ab32",
+    1,
+    "10000000000",
+    "2000000000",
+    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d",
+    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d",
+    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d",
+    "0xb9884b3aB614E60ED29f6d803b85255c8D46b91d"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "e449fb7ecbd2436ca3e58b9cbd8c82da",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_nftID\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_purchasePrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_escrowAmount\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"_seller\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"_buyer\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_inspector\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"_lender\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"approval\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"approveSale\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"buyer\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"cancelSale\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"depositEarnest\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"escrowAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"finalizeSale\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"inspectionPassed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"inspector\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lender\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nftAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nftID\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"purchasePrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"seller\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bool\",\"name\":\"_passed\",\"type\":\"bool\"}],\"name\":\"updateInspectionStatus\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Escrow.sol\":\"Escrow\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":99999},\"remappings\":[]},\"sources\":{\"contracts/Escrow.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\r\\n\\r\\npragma solidity ^0.8.0;\\r\\ninterface IERC721 {\\r\\n    function transferFrom(address _from, address _to, uint256 _id) external;\\r\\n}\\r\\n\\r\\ncontract Escrow {\\r\\n    address public nftAddress;\\r\\n    uint256 public nftID;\\r\\n    uint256 public purchasePrice;\\r\\n    uint256 public escrowAmount;\\r\\n    address payable public seller;\\r\\n    address payable public buyer;\\r\\n    address public inspector;\\r\\n    address public lender;\\r\\n\\r\\n    modifier onlyBuyer() {\\r\\n        require(msg.sender == buyer, \\\"Only buyer can make earnest deposit\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    modifier onlyInspector () {\\r\\n        require(msg.sender == inspector, \\\"Only inspector can do inspection\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    bool public inspectionPassed = false;\\r\\n    mapping(address => bool) public approval;\\r\\n\\r\\n    receive() external payable {}\\r\\n\\r\\n    constructor (\\r\\n        address _nftAddress,\\r\\n        uint256 _nftID,\\r\\n        uint256 _purchasePrice,\\r\\n        uint256 _escrowAmount,\\r\\n        address payable _seller,\\r\\n        address payable _buyer,\\r\\n        address _inspector,\\r\\n        address payable _lender\\r\\n        ) {\\r\\n            nftAddress = _nftAddress;\\r\\n            nftID = _nftID;\\r\\n            purchasePrice = _purchasePrice;\\r\\n            escrowAmount = _escrowAmount;\\r\\n            seller = _seller;\\r\\n            buyer = _buyer;\\r\\n            inspector = _inspector;\\r\\n            lender = _lender;\\r\\n            }\\r\\n\\r\\n    // buyer will deposit the earnest\\r\\n    function depositEarnest() public payable onlyBuyer {\\r\\n        require(msg.value >= escrowAmount, \\\"Escrow amount doesn't match\\\");\\r\\n    }\\r\\n\\r\\n    // inspector will do this inspection\\r\\n    function updateInspectionStatus(bool _passed) public onlyInspector {\\r\\n        inspectionPassed = _passed;\\r\\n    }\\r\\n\\r\\n    // buyer, seller and lender will approve the sale\\r\\n    function approveSale() public {\\r\\n        approval[msg.sender] = true;\\r\\n    }\\r\\n\\r\\n    function getBalance() public view returns (uint) {\\r\\n        // this is literall referring the smart contract and takes it and convert into address and the balances in solidity\\r\\n        return address(this).balance;\\r\\n    }\\r\\n\\r\\n    function finalizeSale() public {\\r\\n      require(inspectionPassed, \\\"Inspection must be done before sale\\\");\\r\\n      require(approval[buyer], \\\"Buyer must give the approval first\\\");\\r\\n      require(approval[seller], \\\"Seller must give the approval first\\\");\\r\\n      require(approval[lender], \\\"Lender must give the approval first\\\");\\r\\n      require(address(this).balance >= purchasePrice, \\\"Must have enough ether for sale\\\");\\r\\n\\r\\n      (bool success, ) = payable(seller).call{value: address(this).balance}(\\\"\\\");\\r\\n      require(success, \\\"Transfer funds must be done before sale\\\");\\r\\n      // Transfer ownership of property\\r\\n      IERC721(nftAddress).transferFrom(seller, buyer, nftID);\\r\\n    }\\r\\n\\r\\n    function cancelSale() public {\\r\\n        if (inspectionPassed == false) {\\r\\n            payable(buyer).transfer(address(this).balance);\\r\\n        } else {\\r\\n            payable(seller).transfer(address(this).balance);\\r\\n        }\\r\\n    }\\r\\n}\",\"keccak256\":\"0x8ffa436eeeaa79290daffc7af0e348649c4999c0710721b933eb66c9f0863eb4\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x60806040526007805460ff60a01b1916905534801561001d57600080fd5b50604051610ce2380380610ce283398101604081905261003c916100c7565b600080546001600160a01b03199081166001600160a01b039a8b16179091556001979097556002959095556003939093556004805486169287169290921790915560058054851691861691909117905560068054841691851691909117905560078054909216921691909117905561015a565b6001600160a01b03811681146100c457600080fd5b50565b600080600080600080600080610100898b0312156100e457600080fd5b88516100ef816100af565b809850506020890151965060408901519550606089015194506080890151610116816100af565b60a08a0151909450610127816100af565b60c08a0151909350610138816100af565b60e08a0151909250610149816100af565b809150509295985092959890939650565b610b79806101696000396000f3fe6080604052600436106100f75760003560e01c80637150d8ae1161008a578063cdd765f811610059578063cdd765f814610305578063defd6c5f14610325578063e7e104901461033b578063ed2cee9e1461035057600080fd5b80637150d8ae146102655780639430b49614610292578063bcead63e146102c2578063c3994752146102ef57600080fd5b806349cdc87c116100c657806349cdc87c146101cf57806358a687ec1461021b5780635af41d61146102305780635bf8633a1461023857600080fd5b806308551a531461010357806312065fe01461015a5780631d10072d1461017757806347a7846f146101b957600080fd5b366100fe57005b600080fd5b34801561010f57600080fd5b506004546101309073ffffffffffffffffffffffffffffffffffffffff1681565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b34801561016657600080fd5b50475b604051908152602001610151565b34801561018357600080fd5b506007546101a99074010000000000000000000000000000000000000000900460ff1681565b6040519015158152602001610151565b3480156101c557600080fd5b5061016960035481565b3480156101db57600080fd5b5061021933600090815260086020526040902080547fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00166001179055565b005b34801561022757600080fd5b5061021961037d565b61021961084e565b34801561024457600080fd5b506000546101309073ffffffffffffffffffffffffffffffffffffffff1681565b34801561027157600080fd5b506005546101309073ffffffffffffffffffffffffffffffffffffffff1681565b34801561029e57600080fd5b506101a96102ad366004610ae4565b60086020526000908152604090205460ff1681565b3480156102ce57600080fd5b506007546101309073ffffffffffffffffffffffffffffffffffffffff1681565b3480156102fb57600080fd5b5061016960015481565b34801561031157600080fd5b50610219610320366004610b21565b610963565b34801561033157600080fd5b5061016960025481565b34801561034757600080fd5b50610219610a2e565b34801561035c57600080fd5b506006546101309073ffffffffffffffffffffffffffffffffffffffff1681565b60075474010000000000000000000000000000000000000000900460ff1661042c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f496e7370656374696f6e206d75737420626520646f6e65206265666f7265207360448201527f616c65000000000000000000000000000000000000000000000000000000000060648201526084015b60405180910390fd5b60055473ffffffffffffffffffffffffffffffffffffffff1660009081526008602052604090205460ff166104e3576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602260248201527f4275796572206d75737420676976652074686520617070726f76616c2066697260448201527f73740000000000000000000000000000000000000000000000000000000000006064820152608401610423565b60045473ffffffffffffffffffffffffffffffffffffffff1660009081526008602052604090205460ff1661059a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f53656c6c6572206d75737420676976652074686520617070726f76616c20666960448201527f72737400000000000000000000000000000000000000000000000000000000006064820152608401610423565b60075473ffffffffffffffffffffffffffffffffffffffff1660009081526008602052604090205460ff16610651576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f4c656e646572206d75737420676976652074686520617070726f76616c20666960448201527f72737400000000000000000000000000000000000000000000000000000000006064820152608401610423565b6002544710156106bd576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601f60248201527f4d757374206861766520656e6f75676820657468657220666f722073616c65006044820152606401610423565b60045460405160009173ffffffffffffffffffffffffffffffffffffffff169047908381818185875af1925050503d8060008114610717576040519150601f19603f3d011682016040523d82523d6000602084013e61071c565b606091505b50509050806107ad576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602760248201527f5472616e736665722066756e6473206d75737420626520646f6e65206265666f60448201527f72652073616c65000000000000000000000000000000000000000000000000006064820152608401610423565b600054600480546005546001546040517f23b872dd00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9384169481019490945290821660248401526044830152909116906323b872dd90606401600060405180830381600087803b15801561083357600080fd5b505af1158015610847573d6000803e3d6000fd5b5050505050565b60055473ffffffffffffffffffffffffffffffffffffffff1633146108f5576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f4f6e6c792062757965722063616e206d616b65206561726e657374206465706f60448201527f73697400000000000000000000000000000000000000000000000000000000006064820152608401610423565b600354341015610961576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601b60248201527f457363726f7720616d6f756e7420646f65736e2774206d6174636800000000006044820152606401610423565b565b60065473ffffffffffffffffffffffffffffffffffffffff1633146109e4576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820181905260248201527f4f6e6c7920696e73706563746f722063616e20646f20696e7370656374696f6e6044820152606401610423565b6007805491151574010000000000000000000000000000000000000000027fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff909216919091179055565b60075474010000000000000000000000000000000000000000900460ff161515600003610a9e5760055460405173ffffffffffffffffffffffffffffffffffffffff909116904780156108fc02916000818181858888f19350505050158015610a9b573d6000803e3d6000fd5b50565b60045460405173ffffffffffffffffffffffffffffffffffffffff909116904780156108fc02916000818181858888f19350505050158015610a9b573d6000803e3d6000fd5b600060208284031215610af657600080fd5b813573ffffffffffffffffffffffffffffffffffffffff81168114610b1a57600080fd5b9392505050565b600060208284031215610b3357600080fd5b81358015158114610b1a57600080fdfea2646970667358221220bed8544a4edae6245f82cd3eb5a4ab488ca3d0dc8fc0239d553f1c6d55eb733764736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600436106100f75760003560e01c80637150d8ae1161008a578063cdd765f811610059578063cdd765f814610305578063defd6c5f14610325578063e7e104901461033b578063ed2cee9e1461035057600080fd5b80637150d8ae146102655780639430b49614610292578063bcead63e146102c2578063c3994752146102ef57600080fd5b806349cdc87c116100c657806349cdc87c146101cf57806358a687ec1461021b5780635af41d61146102305780635bf8633a1461023857600080fd5b806308551a531461010357806312065fe01461015a5780631d10072d1461017757806347a7846f146101b957600080fd5b366100fe57005b600080fd5b34801561010f57600080fd5b506004546101309073ffffffffffffffffffffffffffffffffffffffff1681565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b34801561016657600080fd5b50475b604051908152602001610151565b34801561018357600080fd5b506007546101a99074010000000000000000000000000000000000000000900460ff1681565b6040519015158152602001610151565b3480156101c557600080fd5b5061016960035481565b3480156101db57600080fd5b5061021933600090815260086020526040902080547fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00166001179055565b005b34801561022757600080fd5b5061021961037d565b61021961084e565b34801561024457600080fd5b506000546101309073ffffffffffffffffffffffffffffffffffffffff1681565b34801561027157600080fd5b506005546101309073ffffffffffffffffffffffffffffffffffffffff1681565b34801561029e57600080fd5b506101a96102ad366004610ae4565b60086020526000908152604090205460ff1681565b3480156102ce57600080fd5b506007546101309073ffffffffffffffffffffffffffffffffffffffff1681565b3480156102fb57600080fd5b5061016960015481565b34801561031157600080fd5b50610219610320366004610b21565b610963565b34801561033157600080fd5b5061016960025481565b34801561034757600080fd5b50610219610a2e565b34801561035c57600080fd5b506006546101309073ffffffffffffffffffffffffffffffffffffffff1681565b60075474010000000000000000000000000000000000000000900460ff1661042c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f496e7370656374696f6e206d75737420626520646f6e65206265666f7265207360448201527f616c65000000000000000000000000000000000000000000000000000000000060648201526084015b60405180910390fd5b60055473ffffffffffffffffffffffffffffffffffffffff1660009081526008602052604090205460ff166104e3576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602260248201527f4275796572206d75737420676976652074686520617070726f76616c2066697260448201527f73740000000000000000000000000000000000000000000000000000000000006064820152608401610423565b60045473ffffffffffffffffffffffffffffffffffffffff1660009081526008602052604090205460ff1661059a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f53656c6c6572206d75737420676976652074686520617070726f76616c20666960448201527f72737400000000000000000000000000000000000000000000000000000000006064820152608401610423565b60075473ffffffffffffffffffffffffffffffffffffffff1660009081526008602052604090205460ff16610651576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f4c656e646572206d75737420676976652074686520617070726f76616c20666960448201527f72737400000000000000000000000000000000000000000000000000000000006064820152608401610423565b6002544710156106bd576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601f60248201527f4d757374206861766520656e6f75676820657468657220666f722073616c65006044820152606401610423565b60045460405160009173ffffffffffffffffffffffffffffffffffffffff169047908381818185875af1925050503d8060008114610717576040519150601f19603f3d011682016040523d82523d6000602084013e61071c565b606091505b50509050806107ad576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602760248201527f5472616e736665722066756e6473206d75737420626520646f6e65206265666f60448201527f72652073616c65000000000000000000000000000000000000000000000000006064820152608401610423565b600054600480546005546001546040517f23b872dd00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff9384169481019490945290821660248401526044830152909116906323b872dd90606401600060405180830381600087803b15801561083357600080fd5b505af1158015610847573d6000803e3d6000fd5b5050505050565b60055473ffffffffffffffffffffffffffffffffffffffff1633146108f5576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602360248201527f4f6e6c792062757965722063616e206d616b65206561726e657374206465706f60448201527f73697400000000000000000000000000000000000000000000000000000000006064820152608401610423565b600354341015610961576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601b60248201527f457363726f7720616d6f756e7420646f65736e2774206d6174636800000000006044820152606401610423565b565b60065473ffffffffffffffffffffffffffffffffffffffff1633146109e4576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820181905260248201527f4f6e6c7920696e73706563746f722063616e20646f20696e7370656374696f6e6044820152606401610423565b6007805491151574010000000000000000000000000000000000000000027fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff909216919091179055565b60075474010000000000000000000000000000000000000000900460ff161515600003610a9e5760055460405173ffffffffffffffffffffffffffffffffffffffff909116904780156108fc02916000818181858888f19350505050158015610a9b573d6000803e3d6000fd5b50565b60045460405173ffffffffffffffffffffffffffffffffffffffff909116904780156108fc02916000818181858888f19350505050158015610a9b573d6000803e3d6000fd5b600060208284031215610af657600080fd5b813573ffffffffffffffffffffffffffffffffffffffff81168114610b1a57600080fd5b9392505050565b600060208284031215610b3357600080fd5b81358015158114610b1a57600080fdfea2646970667358221220bed8544a4edae6245f82cd3eb5a4ab488ca3d0dc8fc0239d553f1c6d55eb733764736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 13,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "nftAddress",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 15,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "nftID",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 17,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "purchasePrice",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 19,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "escrowAmount",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 21,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "seller",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_address_payable"
+      },
+      {
+        "astId": 23,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "buyer",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_address_payable"
+      },
+      {
+        "astId": 25,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "inspector",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_address"
+      },
+      {
+        "astId": 27,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "lender",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_address"
+      },
+      {
+        "astId": 54,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "inspectionPassed",
+        "offset": 20,
+        "slot": "7",
+        "type": "t_bool"
+      },
+      {
+        "astId": 58,
+        "contract": "contracts/Escrow.sol:Escrow",
+        "label": "approval",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_mapping(t_address,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_address_payable": {
+        "encoding": "inplace",
+        "label": "address payable",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

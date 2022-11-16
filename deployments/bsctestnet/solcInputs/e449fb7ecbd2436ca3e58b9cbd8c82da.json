@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Escrow.sol": {
+      "content": "// SPDX-License-Identifier: UNLICENSED\r\n\r\npragma solidity ^0.8.0;\r\ninterface IERC721 {\r\n    function transferFrom(address _from, address _to, uint256 _id) external;\r\n}\r\n\r\ncontract Escrow {\r\n    address public nftAddress;\r\n    uint256 public nftID;\r\n    uint256 public purchasePrice;\r\n    uint256 public escrowAmount;\r\n    address payable public seller;\r\n    address payable public buyer;\r\n    address public inspector;\r\n    address public lender;\r\n\r\n    modifier onlyBuyer() {\r\n        require(msg.sender == buyer, \"Only buyer can make earnest deposit\");\r\n        _;\r\n    }\r\n\r\n    modifier onlyInspector () {\r\n        require(msg.sender == inspector, \"Only inspector can do inspection\");\r\n        _;\r\n    }\r\n\r\n    bool public inspectionPassed = false;\r\n    mapping(address => bool) public approval;\r\n\r\n    receive() external payable {}\r\n\r\n    constructor (\r\n        address _nftAddress,\r\n        uint256 _nftID,\r\n        uint256 _purchasePrice,\r\n        uint256 _escrowAmount,\r\n        address payable _seller,\r\n        address payable _buyer,\r\n        address _inspector,\r\n        address payable _lender\r\n        ) {\r\n            nftAddress = _nftAddress;\r\n            nftID = _nftID;\r\n            purchasePrice = _purchasePrice;\r\n            escrowAmount = _escrowAmount;\r\n            seller = _seller;\r\n            buyer = _buyer;\r\n            inspector = _inspector;\r\n            lender = _lender;\r\n            }\r\n\r\n    // buyer will deposit the earnest\r\n    function depositEarnest() public payable onlyBuyer {\r\n        require(msg.value >= escrowAmount, \"Escrow amount doesn't match\");\r\n    }\r\n\r\n    // inspector will do this inspection\r\n    function updateInspectionStatus(bool _passed) public onlyInspector {\r\n        inspectionPassed = _passed;\r\n    }\r\n\r\n    // buyer, seller and lender will approve the sale\r\n    function approveSale() public {\r\n        approval[msg.sender] = true;\r\n    }\r\n\r\n    function getBalance() public view returns (uint) {\r\n        // this is literall referring the smart contract and takes it and convert into address and the balances in solidity\r\n        return address(this).balance;\r\n    }\r\n\r\n    function finalizeSale() public {\r\n      require(inspectionPassed, \"Inspection must be done before sale\");\r\n      require(approval[buyer], \"Buyer must give the approval first\");\r\n      require(approval[seller], \"Seller must give the approval first\");\r\n      require(approval[lender], \"Lender must give the approval first\");\r\n      require(address(this).balance >= purchasePrice, \"Must have enough ether for sale\");\r\n\r\n      (bool success, ) = payable(seller).call{value: address(this).balance}(\"\");\r\n      require(success, \"Transfer funds must be done before sale\");\r\n      // Transfer ownership of property\r\n      IERC721(nftAddress).transferFrom(seller, buyer, nftID);\r\n    }\r\n\r\n    function cancelSale() public {\r\n        if (inspectionPassed == false) {\r\n            payable(buyer).transfer(address(this).balance);\r\n        } else {\r\n            payable(seller).transfer(address(this).balance);\r\n        }\r\n    }\r\n}"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 99999
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
