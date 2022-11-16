@@ -8,5 +8,5 @@ typechain
 cache
 artifacts
 
-artifacts
-cache
+# lock files
+package-lock.json

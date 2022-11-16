@@ -27,7 +27,7 @@ describe("FlashLoan", () => {
     const Token = await ethers.getContractFactory("Token");
 
     // deploy tokens
-    token = await Token.deploy("My Muhtasim", "MTH", "1000000");
+    token = await Token.deploy("My Token", "MTK", "1000000");
 
     // deploy flash loan pools
     flashLoan = await FlashLoan.deploy(token.address);
